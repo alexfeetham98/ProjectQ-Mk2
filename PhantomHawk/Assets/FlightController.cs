@@ -6,6 +6,7 @@ public class FlightController : MonoBehaviour
 {
     public float rollPower, pitchPower, yawPower, throttlePower;
 
+    Rigidbody rb;
 
     public float rawThrottle;
     public float rawPitch;
@@ -21,6 +22,7 @@ public class FlightController : MonoBehaviour
         rawThrottle = Input.GetAxis("Throttle");
         rawPitch = Input.GetAxis("Pitch");
         rawRoll = Input.GetAxis("Roll");
+        rb = GetComponent<Rigidbody>();
     }
 
     void FixedUpdate()
@@ -29,13 +31,15 @@ public class FlightController : MonoBehaviour
 
         transform.position += transform.forward * rawThrottle * throttlePower * Time.deltaTime;
 
+        
+
         activeRoll = Input.GetAxisRaw("Roll") * rollPower * Time.deltaTime;
         activePitch = Input.GetAxisRaw("Pitch") * pitchPower * Time.deltaTime;
         activeYaw = Input.GetAxisRaw("Yaw") * yawPower * Time.deltaTime;
 
         //Debug.Log(Input.GetButton("Brake"));
 
-        Debug.Log("Roll: " + activeRoll + " Pitch: " + activePitch + " Yaw: " + activeYaw + " Throttle: " + rawThrottle);
+        //Debug.Log("Roll: " + activeRoll + " Pitch: " + activePitch + " Yaw: " + activeYaw + " Throttle: " + rawThrottle);
 
         transform.Rotate(activePitch, activeYaw, activeRoll);
     }

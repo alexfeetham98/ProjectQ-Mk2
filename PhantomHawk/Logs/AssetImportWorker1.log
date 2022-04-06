@@ -15,7 +15,7 @@ C:/Users/alexf/Documents/MSc-Commercial-Games-Development/ProjectQ-Mk2/PhantomHa
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-51169
+54053
 Successfully changed project path to: C:/Users/alexf/Documents/MSc-Commercial-Games-Development/ProjectQ-Mk2/PhantomHawk
 C:/Users/alexf/Documents/MSc-Commercial-Games-Development/ProjectQ-Mk2/PhantomHawk
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/alexf/Documents/MSc-Commercial-Games-Development/ProjectQ-Mk2/PhantomHa
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 112.67 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 124.14 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.10f1 (ee872746220e)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.10f1/Editor/Data/Resources/UnitySubsystems
@@ -63,87 +63,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56272
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56320
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.015938 seconds.
+Registered in 0.016432 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 126.44 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 102.66 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.182 seconds
+- Completed reload, in  1.188 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1183ms)
-		BeginReloadAssembly (211ms)
+	ReloadAssembly (1190ms)
+		BeginReloadAssembly (244ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (830ms)
-			LoadAssemblies (206ms)
+		EndReloadAssembly (805ms)
+			LoadAssemblies (237ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (168ms)
+			SetupTypeCache (181ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (54ms)
-			SetupLoadedEditorAssemblies (518ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (494ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (30ms)
+				InitializePlatformSupportModulesInManaged (28ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (127ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (252ms)
-				ProcessInitializeOnLoadMethodAttributes (107ms)
+				RefreshPlugins (103ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (274ms)
+				ProcessInitializeOnLoadMethodAttributes (85ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.026328 seconds.
+Registered in 0.018047 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\alexf\Documents\MSc-Commercial-Games-Development\ProjectQ-Mk2\PhantomHawk\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\alexf\Documents\MSc-Commercial-Games-Development\ProjectQ-Mk2\PhantomHawk\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.36 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  1.877 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1878ms)
-		BeginReloadAssembly (270ms)
+	ReloadAssembly (1879ms)
+		BeginReloadAssembly (247ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (44ms)
-		EndReloadAssembly (1452ms)
-			LoadAssemblies (279ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (1460ms)
+			LoadAssemblies (300ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (439ms)
+			SetupTypeCache (423ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (87ms)
-			SetupLoadedEditorAssemblies (630ms)
+			RebuildScriptCaches (86ms)
+			SetupLoadedEditorAssemblies (644ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (25ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (138ms)
+				InitializePlatformSupportModulesInManaged (24ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (157ms)
 				ProcessInitializeOnLoadAttributes (399ms)
-				ProcessInitializeOnLoadMethodAttributes (46ms)
-				AfterProcessingInitializeOnLoad (18ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (17ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
-Refreshing native plugins compatible for Editor in 1.86 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 1.54 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3223 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 26 unused Assets / (112.4 KB). Loaded Objects now: 3679.
 Memory consumption went from 113.3 MB to 113.1 MB.
-Total: 6.300600 ms (FindLiveObjects: 0.922900 ms CreateObjectMapping: 0.232300 ms MarkObjects: 4.808100 ms  DeleteObjects: 0.333200 ms)
+Total: 6.223500 ms (FindLiveObjects: 0.845000 ms CreateObjectMapping: 0.115100 ms MarkObjects: 4.964500 ms  DeleteObjects: 0.294000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -158,80 +160,371 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 428970.378056 seconds.
-  path: Assets/Controller Tester
-  artifactKey: Guid(bb3da060a2852a0499c26a97f69a27eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Controller Tester using Guid(bb3da060a2852a0499c26a97f69a27eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb273563dd60004f4241114f9ea2e4f0') in 0.031195 seconds 
+  Time since last request: 434585.365258 seconds.
+  path: Assets/Aircraft.prefab
+  artifactKey: Guid(f3bd39805d08cf449aa3c35d02cc0ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aircraft.prefab using Guid(f3bd39805d08cf449aa3c35d02cc0ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '841b5e61d055cc0188fa58f84c89d307') in 2.609725 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 90.854263 seconds.
-  path: Assets/Runway/METAL_FLOORING.jpg
-  artifactKey: Guid(5455d65b95259fd4fa6b851ce5c20a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runway/METAL_FLOORING.jpg using Guid(5455d65b95259fd4fa6b851ce5c20a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08f3b8a80275f645cef514b9bc3adc50') in 0.221573 seconds 
+  Time since last request: 62.613804 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 29.mat
+  artifactKey: Guid(ece32b93f7dfc7b40acdd7a8af2d8fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 29.mat using Guid(ece32b93f7dfc7b40acdd7a8af2d8fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4418924200efeaeec67099637480f627') in 0.143783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 36.mat
+  artifactKey: Guid(20c668aa7e6a5c148a15b0ed19e4cf92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 36.mat using Guid(20c668aa7e6a5c148a15b0ed19e4cf92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88ce1da4a2c0d913e18449eb341d164a') in 0.062402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 37.mat
+  artifactKey: Guid(f1cbf7d37f577a84e845ae6da685bfcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 37.mat using Guid(f1cbf7d37f577a84e845ae6da685bfcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70f281dd3a2c054d6d7ac9d09d1c5ea3') in 0.078356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 34.mat
+  artifactKey: Guid(5c4ca18917c7d3f4d8525473f8fb550e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 34.mat using Guid(5c4ca18917c7d3f4d8525473f8fb550e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd99d2fecad29b09fc17de1ae318647fc') in 0.068904 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 31.mat
+  artifactKey: Guid(56d1bc52e2c073040a72f6b9acc7df02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 31.mat using Guid(56d1bc52e2c073040a72f6b9acc7df02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adc4ffb5da65a91bd5ff4111fafa2c04') in 0.074702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 33.mat
+  artifactKey: Guid(3102a3b21d0dd154ebb22cc4cb3c5dae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 33.mat using Guid(3102a3b21d0dd154ebb22cc4cb3c5dae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '770622892e7623bbc030850f8aac227c') in 0.067760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.960753 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 41.mat
+  artifactKey: Guid(d6866946fb9563246946e5a54a16668e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 41.mat using Guid(d6866946fb9563246946e5a54a16668e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a41dd6ea29bcb3020c59ccdc2a391583') in 0.069907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 68.mat
+  artifactKey: Guid(2a4a301a9ce034041bf1d447e2368e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 68.mat using Guid(2a4a301a9ce034041bf1d447e2368e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edc941a09eb93428dfda39b053c015e3') in 0.062555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 66.mat
+  artifactKey: Guid(56cbb880fbe8907429c8be59055a08d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 66.mat using Guid(56cbb880fbe8907429c8be59055a08d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e14ff33a17d423358500e2335d035f11') in 0.123399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 62.mat
+  artifactKey: Guid(4b088625bc7e4e346bc2762f2cd6e1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 62.mat using Guid(4b088625bc7e4e346bc2762f2cd6e1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb5f87f42fc770581eb315beb19f4d81') in 0.070165 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 77.mat
+  artifactKey: Guid(13c364c43528e154ab8d494cff2909d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 77.mat using Guid(13c364c43528e154ab8d494cff2909d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74c00713aede59dd65d81a4aed10563c') in 0.061837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 48.mat
+  artifactKey: Guid(76c4780c3241a814c8a80474dfb9a5bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 48.mat using Guid(76c4780c3241a814c8a80474dfb9a5bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c6d22ac1d75ca62cec5c0bd697ecb51') in 0.058149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 71.mat
+  artifactKey: Guid(a0f7c1613bfb17a49acf742b3e473644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 71.mat using Guid(a0f7c1613bfb17a49acf742b3e473644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '097de07afe297e79a31ce0fc73d2e7e8') in 0.052067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 80.mat
+  artifactKey: Guid(7288f9317ed29f04a8c55f8e25ad9aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 80.mat using Guid(7288f9317ed29f04a8c55f8e25ad9aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c10d38b3e3381eeb9ddf7019277d220b') in 0.042843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 55.mat
+  artifactKey: Guid(1330f733f202b1345b51fef012bc4e96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 55.mat using Guid(1330f733f202b1345b51fef012bc4e96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f890d4e0f893e0e093df39c1528e359a') in 0.048270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 67.mat
+  artifactKey: Guid(a8f7f8f28d17e034da5e6da19775d449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 67.mat using Guid(a8f7f8f28d17e034da5e6da19775d449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5b1c7ab32053f81c6fa592799607778') in 0.048969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 73.mat
+  artifactKey: Guid(e28fe702f43d76a40ae30c8df0e769dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 73.mat using Guid(e28fe702f43d76a40ae30c8df0e769dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c23e67bc3eb3a9b37ad02daae74d621b') in 0.058519 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 49.mat
+  artifactKey: Guid(bec2916a790abe04ca6b08781e2e4f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 49.mat using Guid(bec2916a790abe04ca6b08781e2e4f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2190930798700aab184676b709ed6bf4') in 0.053861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 50.mat
+  artifactKey: Guid(e4475933835cd5345899d7ce4cb2dda5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 50.mat using Guid(e4475933835cd5345899d7ce4cb2dda5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '207a619da3da77ce6c3bc0a3a96e8d8e') in 0.045000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 81.mat
+  artifactKey: Guid(1451070d266aa5b47960853ae36fd19c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 81.mat using Guid(1451070d266aa5b47960853ae36fd19c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0589671469fe29ef5195d401f10b2f8c') in 0.044061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 78.mat
+  artifactKey: Guid(9b81ab4dfd9ae1b4495b56fb2ec83266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 78.mat using Guid(9b81ab4dfd9ae1b4495b56fb2ec83266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef24bc719a3fe13d6500ec35615cbc6f') in 0.047660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 79.mat
+  artifactKey: Guid(aaf3c69aaf364924a80536ef3f4e9643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 79.mat using Guid(aaf3c69aaf364924a80536ef3f4e9643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b41c4c32eaafb29c735accdfae80eee4') in 0.048197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 47.mat
+  artifactKey: Guid(5f43b282398a0f74c821bbbd7389a6fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 47.mat using Guid(5f43b282398a0f74c821bbbd7389a6fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35d225f20a43d444b392143b6589e3c6') in 0.044923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 53.mat
+  artifactKey: Guid(06fcb9b689eb5b24580b019ac8fa6375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 53.mat using Guid(06fcb9b689eb5b24580b019ac8fa6375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdec87db6c4030aaafd0c9bc046e7ed7') in 0.044387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 45.mat
+  artifactKey: Guid(0f033fc988f81ed438bf56bea9f2e019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 45.mat using Guid(0f033fc988f81ed438bf56bea9f2e019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca54dc2808edb89f1e789c7fe300a5fb') in 0.046483 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 46.mat
+  artifactKey: Guid(7ded9b2f4699e0244b56a0d44edbe4ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 46.mat using Guid(7ded9b2f4699e0244b56a0d44edbe4ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d62ca54d4e3e91a530da1b7c6f4b2f5') in 0.053035 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 57.mat
+  artifactKey: Guid(667886792d4621a48826217b0b5802d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_diffuse 57.mat using Guid(667886792d4621a48826217b0b5802d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b2400cca880f435458cccdc5425ee44') in 0.057735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.616062 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 39.mat
+  artifactKey: Guid(da701a784bb284443a0ada6252053f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 39.mat using Guid(da701a784bb284443a0ada6252053f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3911e6aba25eae46fe811a7e33d636bf') in 0.051521 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 40.mat
+  artifactKey: Guid(45366f313975b2742b24c31071a2b2c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 40.mat using Guid(45366f313975b2742b24c31071a2b2c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8596e2b1925f59a43e3369a8d97f2f1') in 0.048366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 48.mat
+  artifactKey: Guid(b5bd3db140b8a7b48bb98aac3635c048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 48.mat using Guid(b5bd3db140b8a7b48bb98aac3635c048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2f8f441fe2425bd324e3a57873b8d5a') in 0.046787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 47.mat
+  artifactKey: Guid(2c5e6c6575d0dfd42b2fc160dd3680e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 47.mat using Guid(2c5e6c6575d0dfd42b2fc160dd3680e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5faa62aaff36b1079698d15eab88dec') in 0.044002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 45.mat
+  artifactKey: Guid(f6ac9bdbb12f98f42bdd9e5f6344ddde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 45.mat using Guid(f6ac9bdbb12f98f42bdd9e5f6344ddde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9aef2ec3c1c9b5797ee3a19d4fc5776') in 0.044091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.422717 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 50.mat
+  artifactKey: Guid(206b92f8ab137c44b8c7ac21162653ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 50.mat using Guid(206b92f8ab137c44b8c7ac21162653ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc984f57453b9780c975513593da4b7b') in 0.042376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 60.mat
+  artifactKey: Guid(8803b03be4dc75f4a9c56da3a9034014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 60.mat using Guid(8803b03be4dc75f4a9c56da3a9034014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36c7ab4ea59d3984cd07e4e6c03843b9') in 0.050569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 57.mat
+  artifactKey: Guid(92bece7652f05044bbd66de55fe5b449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 57.mat using Guid(92bece7652f05044bbd66de55fe5b449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf31f48f0c2212d4986fcba4f3cdf71e') in 0.049008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 68.mat
+  artifactKey: Guid(244316f2cd00de04f95947a38b6ccbf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 68.mat using Guid(244316f2cd00de04f95947a38b6ccbf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81756297ff50b9a10932ac46264b5568') in 0.044422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 70.mat
+  artifactKey: Guid(568ab28ec98e5e143a4d1c635a39170f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 70.mat using Guid(568ab28ec98e5e143a4d1c635a39170f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1457eee11b503119da1e32c423a2f261') in 0.048885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 65.mat
+  artifactKey: Guid(904b39df1b8b739489bc8b3d23de9b3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 65.mat using Guid(904b39df1b8b739489bc8b3d23de9b3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8282b86c3ec1d4ce54d41e3d539b1139') in 0.041831 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 53.mat
+  artifactKey: Guid(97e3c67f02b24344e9160f7d3e33206f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 53.mat using Guid(97e3c67f02b24344e9160f7d3e33206f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aba6dab6b292f28e6cd32e892bca8b95') in 0.043685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 72.mat
+  artifactKey: Guid(f4d0b7f20bea9804fa6335d99782f440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 72.mat using Guid(f4d0b7f20bea9804fa6335d99782f440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c219826979f0b21b8137aa20f67af636') in 0.043580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 58.mat
+  artifactKey: Guid(9a885d29032f4f64e92dc605260bb192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 58.mat using Guid(9a885d29032f4f64e92dc605260bb192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81b0545d056234e2aa5cadf5e4463525') in 0.046060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 81.mat
+  artifactKey: Guid(a44d6c6b61d580b468e8d019c1a2a222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 81.mat using Guid(a44d6c6b61d580b468e8d019c1a2a222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56ce37c7a552e46ba97f54979d851943') in 0.041399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 82.mat
+  artifactKey: Guid(d77128c844e17d145a3abc61a0e79893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 82.mat using Guid(d77128c844e17d145a3abc61a0e79893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b8eee85c8aa7372f5003a05649f3d10') in 0.051069 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 76.mat
+  artifactKey: Guid(0cf68d9d16307cf4cb8cadc60b156ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 76.mat using Guid(0cf68d9d16307cf4cb8cadc60b156ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b14de596bbdb18b2a21fb22a58fb0095') in 0.046071 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 83.mat
+  artifactKey: Guid(a5ea69531297ea2429e388f9468bc560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 83.mat using Guid(a5ea69531297ea2429e388f9468bc560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60e305aa005aaa953e5d3caec8bf6014') in 0.054017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 80.mat
+  artifactKey: Guid(98358af7cce095340a3ae58f1885bcf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 80.mat using Guid(98358af7cce095340a3ae58f1885bcf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64428a7f2d3f2cbe4bf7444684714c5a') in 0.044587 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000151 seconds.
-  path: Assets/Runway/Road-2-Lane-Straight-jpg.jpg
-  artifactKey: Guid(0de962d66119d0b4ba4af3a2bc91fbf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runway/Road-2-Lane-Straight-jpg.jpg using Guid(0de962d66119d0b4ba4af3a2bc91fbf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85f37e9a7d11d6c048e4e6a52335cdea') in 0.064632 seconds 
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 85.mat
+  artifactKey: Guid(de8b79518a3e76944a11a3da73f0c50c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 85.mat using Guid(de8b79518a3e76944a11a3da73f0c50c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8dc229784c472bc749913495fbc51f1') in 0.043982 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 23.209357 seconds.
-  path: Assets/Runway/Materials/METAL_FLOORING.mat
-  artifactKey: Guid(f7b72406284ab5044b17781a20971a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Runway/Materials/METAL_FLOORING.mat using Guid(f7b72406284ab5044b17781a20971a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9769d5cd8ccd17fec12f14191f152689') in 0.170825 seconds 
+  Time since last request: 0.000081 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 75.mat
+  artifactKey: Guid(420820313696ed64da3d2814ea5825e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 75.mat using Guid(420820313696ed64da3d2814ea5825e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7974a06ffd81c308bc1d1a35e4cb00cb') in 0.049623 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.033370 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.47 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.757 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2760ms)
-		BeginReloadAssembly (455ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (104ms)
-		EndReloadAssembly (2073ms)
-			LoadAssemblies (399ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (644ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (94ms)
-			SetupLoadedEditorAssemblies (844ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (43ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (154ms)
-				ProcessInitializeOnLoadAttributes (566ms)
-				ProcessInitializeOnLoadMethodAttributes (59ms)
-				AfterProcessingInitializeOnLoad (17ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (41ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.31 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3220 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (79.2 KB). Loaded Objects now: 3751.
-Memory consumption went from 122.0 MB to 121.9 MB.
-Total: 9.008200 ms (FindLiveObjects: 2.094700 ms CreateObjectMapping: 0.561300 ms MarkObjects: 6.030000 ms  DeleteObjects: 0.310100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 59.mat
+  artifactKey: Guid(40fcc082588e93445a2bb2f9d22a3573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 59.mat using Guid(40fcc082588e93445a2bb2f9d22a3573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04dcc82b18972d6e2662833dc4a88432') in 0.048836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 87.mat
+  artifactKey: Guid(0b850046eb615a64da0eba5be020117c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 87.mat using Guid(0b850046eb615a64da0eba5be020117c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17f0dd1d58d171bb2ecb7f014195f033') in 0.059725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 52.mat
+  artifactKey: Guid(b0cd204b096e6854d8ff7fd714659705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 52.mat using Guid(b0cd204b096e6854d8ff7fd714659705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '974c034c2b87e2bfc1c75006a785310d') in 0.066913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 63.mat
+  artifactKey: Guid(2709d2fe7a9c2514b9b52440ef888797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 63.mat using Guid(2709d2fe7a9c2514b9b52440ef888797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a0861e4c9bf08d63b857dbd7981b861') in 0.061958 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.862297 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 90.mat
+  artifactKey: Guid(52fb0547d3af243479b265a0e33349df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 90.mat using Guid(52fb0547d3af243479b265a0e33349df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a88a32cc10898f87f42c145f0f6b4722') in 0.051975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 110.mat
+  artifactKey: Guid(874f87b57a406fe48a6b979565d7515a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 110.mat using Guid(874f87b57a406fe48a6b979565d7515a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b29072eded60e329548717227369a5d') in 0.069380 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 105.mat
+  artifactKey: Guid(8cf67d6c44da11c419b1f20b9352d4c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 105.mat using Guid(8cf67d6c44da11c419b1f20b9352d4c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1c2ee8c1aeb7e2082e6e3814ec00900') in 0.054270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 106.mat
+  artifactKey: Guid(8aeb2eba1be52d34eb72a44e1c41ea29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 106.mat using Guid(8aeb2eba1be52d34eb72a44e1c41ea29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21120ebba45c82f041e8c76dec9a4269') in 0.062551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 102.mat
+  artifactKey: Guid(d36fb9bcdde076f45a381c90560f559b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 102.mat using Guid(d36fb9bcdde076f45a381c90560f559b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f96c0ac23dee9f6ba55e8c890bb85b81') in 0.055185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 93.mat
+  artifactKey: Guid(acd2aed550246584aa7a3ea9c99b1e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 93.mat using Guid(acd2aed550246584aa7a3ea9c99b1e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '403db0aafe0c474bfddc54c8eeff6bd8') in 0.051435 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 92.mat
+  artifactKey: Guid(f1e2d85d8878cff4e92779e37d0005cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 92.mat using Guid(f1e2d85d8878cff4e92779e37d0005cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b843c394d393065a867082930d73622') in 0.049103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Models/piper_pa18_fbx/Materials/piper_refl 112.mat
+  artifactKey: Guid(1609825723d0ce64685069bc964f03c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/piper_pa18_fbx/Materials/piper_refl 112.mat using Guid(1609825723d0ce64685069bc964f03c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9e7e73cccfc45bee71a07db01f1c4a6') in 0.050913 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
