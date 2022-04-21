@@ -6,7 +6,7 @@ public class FlightController : MonoBehaviour
 {
     public float rollPower, pitchPower, yawPower, throttlePower;
 
-    Rigidbody rb;
+    Rigidbody aircraftRB;
 
     public float rawThrottle;
     public float rawPitch;
@@ -22,7 +22,7 @@ public class FlightController : MonoBehaviour
         rawThrottle = Input.GetAxis("Throttle");
         rawPitch = Input.GetAxis("Pitch");
         rawRoll = Input.GetAxis("Roll");
-        rb = GetComponent<Rigidbody>();
+        aircraftRB = GetComponent<Rigidbody>();
     }
 
     void FixedUpdate()

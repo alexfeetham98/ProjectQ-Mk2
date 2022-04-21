@@ -347,6 +347,7 @@
 "Assets/Controller Tester/Scripts/DetectUnknownControllerMappings.cs"
 "Assets/FlightController.cs"
 "Assets/GroundChecker.cs"
+"Assets/RBFlight.cs"
 -langversion:9.0
 
 /deterministic
