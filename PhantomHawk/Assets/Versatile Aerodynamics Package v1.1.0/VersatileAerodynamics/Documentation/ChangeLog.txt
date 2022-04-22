@@ -1,0 +1,12 @@
+
+v1.1.0
+
+- Removed the unused MouseLook script from the example scene
+- Audio folder added to example scene
+- Windmill prefab added to example scene
+
+[Bugfixes]
+- The repeated System.NullReferenceException errors thrown during
+  the editor loop while an Aerodynamics component had no reference 
+  to an Aircraft component was replaced with a single more gentle
+  console warning.

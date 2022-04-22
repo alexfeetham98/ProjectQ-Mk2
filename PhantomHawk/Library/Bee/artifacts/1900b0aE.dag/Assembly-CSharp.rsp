@@ -105,6 +105,7 @@
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
+-define:UNITY_PRO_LICENSE
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
 -define:ENABLE_DIRECTOR
 -define:ENABLE_LOCALIZATION
@@ -318,9 +319,9 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.2.10f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.2.10f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.2.10f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
--r:"C:/Users/alexf/Documents/MSc-Commercial-Games-Development/ProjectQ-Mk2/PhantomHawk/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
--r:"C:/Users/alexf/Documents/MSc-Commercial-Games-Development/ProjectQ-Mk2/PhantomHawk/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
--r:"C:/Users/alexf/Documents/MSc-Commercial-Games-Development/ProjectQ-Mk2/PhantomHawk/Library/PackageCache/com.unity.visualscripting@1.7.6/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"C:/Users/alexf/Documents/aMScCGD/ProjectQ-Mk2/PhantomHawk/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
+-r:"C:/Users/alexf/Documents/aMScCGD/ProjectQ-Mk2/PhantomHawk/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
+-r:"C:/Users/alexf/Documents/aMScCGD/ProjectQ-Mk2/PhantomHawk/Library/PackageCache/com.unity.visualscripting@1.7.6/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
@@ -348,6 +349,19 @@
 "Assets/FlightController.cs"
 "Assets/GroundChecker.cs"
 "Assets/RBFlight.cs"
+"Assets/Versatile Aerodynamics Package v1.1.0/Demo Scene Assets/Audio/AudioScripts/PropEngineAudio.cs"
+"Assets/Versatile Aerodynamics Package v1.1.0/Demo Scene Assets/Scripts/Camera/MouseAim.cs"
+"Assets/Versatile Aerodynamics Package v1.1.0/Demo Scene Assets/Scripts/Camera/MouseLook.cs"
+"Assets/Versatile Aerodynamics Package v1.1.0/Demo Scene Assets/Scripts/PlayerController.cs"
+"Assets/Versatile Aerodynamics Package v1.1.0/Demo Scene Assets/Scripts/PropellorAnimation.cs"
+"Assets/Versatile Aerodynamics Package v1.1.0/VersatileAerodynamics/Aerodynamics.cs"
+"Assets/Versatile Aerodynamics Package v1.1.0/VersatileAerodynamics/Aircraft.cs"
+"Assets/Versatile Aerodynamics Package v1.1.0/VersatileAerodynamics/Control Surface Components/ElevatorComponent.cs"
+"Assets/Versatile Aerodynamics Package v1.1.0/VersatileAerodynamics/Control Surface Components/LeftAileronComponent.cs"
+"Assets/Versatile Aerodynamics Package v1.1.0/VersatileAerodynamics/Control Surface Components/RightAileronComponent.cs"
+"Assets/Versatile Aerodynamics Package v1.1.0/VersatileAerodynamics/Control Surface Components/RudderComponent.cs"
+"Assets/Versatile Aerodynamics Package v1.1.0/VersatileAerodynamics/ControlMaster.cs"
+"Assets/Versatile Aerodynamics Package v1.1.0/VersatileAerodynamics/Propulsion.cs"
 -langversion:9.0
 
 /deterministic

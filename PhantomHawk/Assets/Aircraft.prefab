@@ -1360,7 +1360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 739505979461340150}
   - component: {fileID: 739505979461340153}
-  - component: {fileID: 6691225134612936093}
+  - component: {fileID: 9114002911232524014}
   - component: {fileID: 739505979461340151}
   m_Layer: 0
   m_Name: Aircraft
@@ -1402,7 +1402,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6691225134612936093
+--- !u!114 &9114002911232524014
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1411,9 +1411,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 739505979461340152}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4de55bdac21da5342acc181693d3be3d, type: 3}
+  m_Script: {fileID: 11500000, guid: c04d7ec36e2c31b49959b3c38e4d356b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newCenterOfMass: {x: 0, y: 0, z: 0}
+  rollTorqueMultiplier: 1
+  fluid_density: 0.5
+  wind: {x: 0, y: 0, z: 0}
 --- !u!114 &739505979461340151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8776,7 +8780,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9b5e2f2a3c8846244a7fad1df703f269, type: 2}
+  - {fileID: 2100000, guid: dc17d2a8a750df44ab8f173cbf6725bb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10315,7 +10319,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5fc8315b9e18b5e4285f39d8e01dd751, type: 2}
+  - {fileID: 2100000, guid: dc17d2a8a750df44ab8f173cbf6725bb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
