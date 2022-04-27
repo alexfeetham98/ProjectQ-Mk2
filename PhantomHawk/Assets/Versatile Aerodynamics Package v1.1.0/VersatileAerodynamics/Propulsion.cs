@@ -16,6 +16,7 @@ public class Propulsion : MonoBehaviour
     [Header("State of the engine; 0 : off | 1 : spooling up | 2 : on | 3 : spooling down")]
     public int state = 0;
 
+    [SerializeField]
     private float _currentThrust = 0f;
     /// <summary>
     /// the current thrust output of the engine.

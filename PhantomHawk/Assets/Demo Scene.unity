@@ -269,9 +269,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aerodynamic_Center: {x: 0, y: 0, z: 0}
-  planform_Area: 2
+  planform_Area: 1
   side_Area: 0
-  aspectRatio: 2
+  aspectRatio: 1
   liftMultiplier: 1
   stallThreshold: 19.5
   liftDropOff: 0
@@ -341,7 +341,7 @@ MonoBehaviour:
   aerodynamic_Center: {x: 0, y: 0, z: 0}
   planform_Area: 0.5
   side_Area: 1
-  aspectRatio: 0.5
+  aspectRatio: 0.05
   liftMultiplier: 1
   stallThreshold: 19.5
   liftDropOff: 0
@@ -473,9 +473,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e02ac5d3dc700e04793720415b2ff7f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxThrust: 1500
+  maxThrust: 1250
   responsiveness: 0.2
   state: 2
+  _currentThrust: 0
 --- !u!1 &774125683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,9 +1199,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aerodynamic_Center: {x: 0, y: 0, z: 0}
-  planform_Area: 2
+  planform_Area: 1
   side_Area: 0
-  aspectRatio: 2
+  aspectRatio: 1
   liftMultiplier: 1
   stallThreshold: 19.5
   liftDropOff: 0
@@ -2704,8 +2705,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739505978939997753}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1113.9797, y: 361.27908, z: -154.28015}
+  m_LocalRotation: {x: -0, y: -0.5481799, z: -0, w: 0.83636045}
+  m_LocalPosition: {x: 1110.1, y: 361.27908, z: -172.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2715,7 +2716,7 @@ Transform:
   - {fileID: 1263823142}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -66.484, z: 0}
 --- !u!54 &739505978939997752
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18413,7 +18414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newCenterOfMass: {x: 0, y: 0, z: -0.5}
-  rollTorqueMultiplier: 1
+  rollTorqueMultiplier: 0.5
   fluid_density: 0.5
   wind: {x: 0, y: 0, z: 0}
 --- !u!114 &9114002911755438896
@@ -18428,9 +18429,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da2e6e24857d8c40a6570b6711ac320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementProfile: 0
-  responsiveness: 1.5
-  controlSurfaceForce: 750
+  movementProfile: 1
+  responsiveness: 1.25
+  controlSurfaceForce: 500
   maxAileronDeflection: 25
   maxElevatorDeflection: 20
   maxRudderDeflection: 20
@@ -18451,6 +18452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   throttleSensitivity: 0.05
+  vtol: 1
 --- !u!4 &9122242080252511430
 Transform:
   m_ObjectHideFlags: 0
