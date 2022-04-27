@@ -27,38 +27,27 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.JoystickButton1))
+        if (Input.GetKeyDown(KeyCode.JoystickButton1))
         {
             vtol = vtol ? false : true;
         }
-        if (!vtol)
+
+        if (airplaneController != null)
         {
-            if (airplaneController != null)
+            if (Input.GetJoystickNames() != null)
             {
-                if (Input.GetJoystickNames() != null)
-                {
-                    airplaneController.Pitch = Input.GetAxisRaw("Pitch");
-                    airplaneController.Roll = Input.GetAxisRaw("Roll");
-                    airplaneController.Yaw = Input.GetAxisRaw("Yaw");
-                    airplaneController.Throttle = Input.GetAxisRaw("Throttle");
-                }
-                else
-                {
-                    airplaneController.Pitch = Input.GetAxisRaw("Vertical");
-                    airplaneController.Roll = -Input.GetAxisRaw("Horizontal");
-                    airplaneController.Yaw = (Input.GetKey(KeyCode.Q) ? 1f : 0f) + (Input.GetKey(KeyCode.E) ? -1f : 0f);
-                    airplaneController.Throttle += Input.mouseScrollDelta.y * throttleSensitivity;
-                }
+                airplaneController.Pitch = Input.GetAxisRaw("Pitch");
+                airplaneController.Roll = Input.GetAxisRaw("Roll");
+                airplaneController.Yaw = Input.GetAxisRaw("Yaw");
+                airplaneController.Throttle = Input.GetAxisRaw("Throttle");
             }
-        }
-        if (vtol)
-        {
-            airplaneController.Pitch = Input.GetAxisRaw("Pitch");
-            airplaneController.Roll = Input.GetAxisRaw("Roll");
-            airplaneController.Yaw = Input.GetAxisRaw("Yaw");
-            airplaneController.Throttle = Input.GetAxisRaw("Throttle");
-
-
+            else
+            {
+                airplaneController.Pitch = Input.GetAxisRaw("Vertical");
+                airplaneController.Roll = -Input.GetAxisRaw("Horizontal");
+                airplaneController.Yaw = (Input.GetKey(KeyCode.Q) ? 1f : 0f) + (Input.GetKey(KeyCode.E) ? -1f : 0f);
+                airplaneController.Throttle += Input.mouseScrollDelta.y * throttleSensitivity;
+            }
         }
     }
 }

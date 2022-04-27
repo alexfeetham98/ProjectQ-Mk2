@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Versatile Aerodynamics Package v1.1.0/Scenes/Demo Scene.unity
+- path: Assets/Demo Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

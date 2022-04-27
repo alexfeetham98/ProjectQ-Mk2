@@ -10,6 +10,8 @@ public class Propulsion : MonoBehaviour
     [Tooltip("The thrust produced at max throttle.")]
     public float maxThrust;
 
+    public float VtolThrust;
+
     [Tooltip("Speed the engine spools up to the thrust setting.")]
     public float responsiveness = .2f;
 
@@ -18,16 +20,17 @@ public class Propulsion : MonoBehaviour
 
     [SerializeField]
     private float _currentThrust = 0f;
-    /// <summary>
-    /// the current thrust output of the engine.
-    /// </summary>
+
     public float GetCurrentThrust { get { return _currentThrust; } }
 
     Rigidbody body;
     ControlMaster controller;
 
+    PlayerController playerController;
+
     void Start()
     {
+        playerController = GetComponentInParent<PlayerController>();
         body = GetComponentInParent<Rigidbody>();
 
         if (body == null)
@@ -73,10 +76,19 @@ public class Propulsion : MonoBehaviour
         else
         {
             _currentThrust += delta;
+            
         }
     }
     void FixedUpdate()
     {
+        
+        if (playerController.vtol == true)
+        {
+            float yVel = body.velocity.y + Physics.gravity.y;
+            
+            body.AddForce(0, -yVel, 0, ForceMode.Acceleration);
+            body.AddForce(0, Input.GetAxis("VTOL_Throttle") * VtolThrust, 0);
+        }
         Vector3 force = _currentThrust * maxThrust * transform.forward;
         body.AddForceAtPosition(force, transform.position);
     }
