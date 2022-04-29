@@ -28,7 +28,6 @@ public class Aircraft : MonoBehaviour
     [Tooltip("The wind vector applied to this aircraft")]
     public Vector3 wind;
 
-
     private Vector3 relativeVelocity;
     /// <summary>
     /// Relative velocity to the vector of the airflow, or combined ground speed and wind speed.
@@ -53,10 +52,14 @@ public class Aircraft : MonoBehaviour
         Gizmos.DrawSphere(transform.TransformPoint(newCenterOfMass), .25f);
     }
 
+
+
     void FixedUpdate()
     {
         Update_Relative_Velocity();
     }
+
+
 
     void Update_Relative_Velocity()
     {

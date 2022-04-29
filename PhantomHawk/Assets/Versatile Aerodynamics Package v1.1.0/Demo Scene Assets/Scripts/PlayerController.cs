@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     //axis 7 vertical btn
     //dpad L3 R5 U4 D6
     //votl engine btn 2
+    //btn 2 cam reset
 
     void Update()
     {

@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MouseAim : MonoBehaviour
+public class CameraRig : MonoBehaviour
 {
     [SerializeField]
     public Transform focus;
     [SerializeField]
-    private Transform mouseAim;
+    private Transform target;
     [SerializeField]
     private Transform rig;
     [SerializeField]
@@ -15,16 +15,19 @@ public class MouseAim : MonoBehaviour
     [SerializeField]
     private float aimDistance = 500f;
 
-    public float mouseSensitivity = 2f;
+    public float cameraSensitivity = 0.5f;
     public float cameraSmoothSpeed = 2f;
     public bool enableSmoothFollow = true;
     public float followSmoothSpeed = 10f;
 
-    public Vector3 MouseAimPosition
+    private float camX;
+    private float camY;
+
+    public Vector3 targetPosition
     {
         get
         {
-            return mouseAim.position + (mouseAim.forward * aimDistance);
+            return target.position + (target.forward * aimDistance);
         }
     }
     public Vector3 ReticlePosition
@@ -35,26 +38,51 @@ public class MouseAim : MonoBehaviour
         }
     }
 
-
-
     private void Update()
     {
         UpdatePosition();
-        RotateRig();   
+        RotateRig();
+        if (Input.GetKey(KeyCode.JoystickButton2))
+        {
+            ResetPosition();
+        }
     }
 
     void RotateRig()
     {
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
-        float mouseY = -Input.GetAxis("Mouse Y") * mouseSensitivity;
+        if (Input.GetKey(KeyCode.JoystickButton3)) //Dpad left - pan right
+        {
+            camX = cameraSensitivity * -1;
+        }
+        else if (Input.GetKey(KeyCode.JoystickButton5)) //Dpad right - pan left
+        {
+            camX = cameraSensitivity * 1;
+        }
+        else
+        {
+            camX = 0;
+        }
 
-        mouseAim.Rotate(cam.up, mouseX, Space.World);
-        mouseAim.Rotate(cam.right, mouseY, Space.World);
+        if (Input.GetKey(KeyCode.JoystickButton4)) //Dpad up - pan down
+        {
+            camY = cameraSensitivity * -1;
+        }
+        else if (Input.GetKey(KeyCode.JoystickButton6)) //Dpad down - pan up
+        {
+            camY = cameraSensitivity * 1;
+        }
+        else
+        {
+            camY = 0;
+        }
+
+        target.Rotate(cam.up, camX, Space.World);
+        target.Rotate(cam.right, camY, Space.World);
 
         Vector3 up = (focus.parent == null) ? Vector3.up : focus.parent.up;
 
         rig.rotation = Damp(rig.rotation,
-                            Quaternion.LookRotation(mouseAim.forward, up),
+                            Quaternion.LookRotation(target.forward, up),
                             cameraSmoothSpeed,
                             Time.deltaTime);
     }
@@ -72,6 +100,11 @@ public class MouseAim : MonoBehaviour
             }
             else { transform.position = focus.position; }
         }
+    }
+
+    void ResetPosition()
+    {
+        target.transform.rotation = focus.transform.rotation;
     }
 
     private Quaternion Damp(Quaternion a, Quaternion b, float lambda, float dt)
