@@ -22,6 +22,8 @@ public class CameraRig : MonoBehaviour
 
     private float camX;
     private float camY;
+    private bool rotatingX = false;
+    private bool rotatingY = false;
 
     private void Start()
     {
@@ -47,15 +49,7 @@ public class CameraRig : MonoBehaviour
     {
         UpdatePosition();
         RotateRig();
-
-        if (Input.GetKeyUp(KeyCode.JoystickButton3) || Input.GetKeyUp(KeyCode.JoystickButton5))
-        {
-            ResetPosition();
-        }
-        if (Input.GetKeyUp(KeyCode.JoystickButton4) || Input.GetKeyUp(KeyCode.JoystickButton6))
-        {
-            ResetPosition();
-        }
+        ResetPosition();
     }
 
     void RotateRig()
@@ -63,27 +57,33 @@ public class CameraRig : MonoBehaviour
         if (Input.GetKey(KeyCode.JoystickButton3)) //Dpad left - pan right
         {
             camX = cameraSensitivity * -1;
+            rotatingX = true;
         }
         else if (Input.GetKey(KeyCode.JoystickButton5)) //Dpad right - pan left
         {
             camX = cameraSensitivity * 1;
+            rotatingX = true;
         }
         else
         {
             camX = 0;
+            rotatingX = false;
         }
 
         if (Input.GetKey(KeyCode.JoystickButton4)) //Dpad up - pan down
         {
             camY = cameraSensitivity * -1;
+            rotatingY = true;
         }
         else if (Input.GetKey(KeyCode.JoystickButton6)) //Dpad down - pan up
         {
             camY = cameraSensitivity * 1;
+            rotatingY = true;
         }
         else
         {
             camY = 0;
+            rotatingY = false;
         }
 
         target.Rotate(cam.up, camX, Space.World);
@@ -114,7 +114,10 @@ public class CameraRig : MonoBehaviour
 
     void ResetPosition()
     {
-        target.transform.rotation = Quaternion.Euler(0, -66.5f, 0);
+        if (!rotatingX && !rotatingY)
+        {
+            target.transform.rotation = focus.transform.rotation;
+        }
     }
 
     private Quaternion Damp(Quaternion a, Quaternion b, float lambda, float dt)
