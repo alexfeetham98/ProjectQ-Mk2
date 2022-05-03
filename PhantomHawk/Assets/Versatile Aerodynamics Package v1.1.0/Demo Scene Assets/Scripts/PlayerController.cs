@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     ControlMaster airplaneController;
+    Rigidbody rb;
 
     public float throttleSensitivity = .05f;
     public bool vtol = true;
@@ -13,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         airplaneController = GetComponent<ControlMaster>();
+        rb = GetComponent<Rigidbody>();
     }
 
     //full flaps btn 9
@@ -33,22 +35,19 @@ public class PlayerController : MonoBehaviour
             vtol = vtol ? false : true;
         }
 
-        if (airplaneController != null)
+
+        airplaneController.Pitch = Input.GetAxisRaw("Pitch");
+        airplaneController.Roll = Input.GetAxisRaw("Roll");
+        airplaneController.Yaw = Input.GetAxisRaw("Yaw");
+        airplaneController.Throttle = Input.GetAxisRaw("Throttle");
+
+        if (Input.GetKey(KeyCode.JoystickButton0))
         {
-            if (Input.GetJoystickNames() != null)
-            {
-                airplaneController.Pitch = Input.GetAxisRaw("Pitch");
-                airplaneController.Roll = Input.GetAxisRaw("Roll");
-                airplaneController.Yaw = Input.GetAxisRaw("Yaw");
-                airplaneController.Throttle = Input.GetAxisRaw("Throttle");
-            }
-            else
-            {
-                airplaneController.Pitch = Input.GetAxisRaw("Vertical");
-                airplaneController.Roll = -Input.GetAxisRaw("Horizontal");
-                airplaneController.Yaw = (Input.GetKey(KeyCode.Q) ? 1f : 0f) + (Input.GetKey(KeyCode.E) ? -1f : 0f);
-                airplaneController.Throttle += Input.mouseScrollDelta.y * throttleSensitivity;
-            }
+            rb.drag = 0.5f;
+        }
+        if (Input.GetKeyUp(KeyCode.JoystickButton0))
+        {
+            rb.drag = 0;
         }
     }
 }
