@@ -23,6 +23,11 @@ public class CameraRig : MonoBehaviour
     private float camX;
     private float camY;
 
+    private void Start()
+    {
+        ResetPosition();
+    }
+
     public Vector3 targetPosition
     {
         get
@@ -42,7 +47,12 @@ public class CameraRig : MonoBehaviour
     {
         UpdatePosition();
         RotateRig();
-        if (Input.GetKey(KeyCode.JoystickButton2))
+
+        if (Input.GetKeyUp(KeyCode.JoystickButton3) || Input.GetKeyUp(KeyCode.JoystickButton5))
+        {
+            ResetPosition();
+        }
+        if (Input.GetKeyUp(KeyCode.JoystickButton4) || Input.GetKeyUp(KeyCode.JoystickButton6))
         {
             ResetPosition();
         }
@@ -104,7 +114,7 @@ public class CameraRig : MonoBehaviour
 
     void ResetPosition()
     {
-        target.transform.rotation = focus.transform.rotation;
+        target.transform.rotation = Quaternion.Euler(0, -66.5f, 0);
     }
 
     private Quaternion Damp(Quaternion a, Quaternion b, float lambda, float dt)

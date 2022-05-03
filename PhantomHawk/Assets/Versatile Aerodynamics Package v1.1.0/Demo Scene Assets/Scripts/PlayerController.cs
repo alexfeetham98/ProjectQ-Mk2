@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(ControlMaster))]
 public class PlayerController : MonoBehaviour
@@ -27,6 +28,8 @@ public class PlayerController : MonoBehaviour
     //dpad L3 R5 U4 D6
     //votl engine btn 2
     //btn 2 cam reset
+    //btn 7 free
+    //btn 8 reset
 
     void Update()
     {
@@ -34,7 +37,6 @@ public class PlayerController : MonoBehaviour
         {
             vtol = vtol ? false : true;
         }
-
 
         airplaneController.Pitch = Input.GetAxisRaw("Pitch");
         airplaneController.Roll = Input.GetAxisRaw("Roll");
@@ -49,5 +51,10 @@ public class PlayerController : MonoBehaviour
         {
             rb.drag = 0;
         }
+
+        if(Input.GetKeyDown(KeyCode.JoystickButton8))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }    
     }
 }
