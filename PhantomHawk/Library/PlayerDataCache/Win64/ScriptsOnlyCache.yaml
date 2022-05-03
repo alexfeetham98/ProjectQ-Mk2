@@ -14,10 +14,21 @@ ScriptsOnlyBuild:
     - RudderComponent
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
   sceneClasses:
     Assets/Demo Scene.unity:
     - Class: 1
@@ -38,6 +49,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
     - Class: 65
@@ -51,15 +64,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 2152}
+    - Class: 114
       Script: {instanceID: 2338}
+    - Class: 114
+      Script: {instanceID: 2588}
+    - Class: 114
+      Script: {instanceID: 2804}
     - Class: 114
       Script: {instanceID: 2844}
     - Class: 114
+      Script: {instanceID: 4116}
+    - Class: 114
+      Script: {instanceID: 4376}
+    - Class: 114
       Script: {instanceID: 4874}
+    - Class: 114
+      Script: {instanceID: 5098}
     - Class: 114
       Script: {instanceID: 5138}
     - Class: 114
+      Script: {instanceID: 5668}
+    - Class: 114
       Script: {instanceID: 5782}
+    - Class: 114
+      Script: {instanceID: 5820}
+    - Class: 114
+      Script: {instanceID: 6142}
     - Class: 114
       Script: {instanceID: 6188}
     - Class: 114
@@ -73,6 +104,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7752}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 134
       Script: {instanceID: 0}
@@ -89,6 +122,12 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
     - Class: 218
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -795,7 +834,7 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 9beed5ff1d202e5e14f98d9f3e9a59cb
+      Hash: 507312ff64130cabfc47555f9b7ce3e4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController

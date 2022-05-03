@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 [RequireComponent(typeof(ControlMaster))]
 public class PlayerController : MonoBehaviour
 {
     ControlMaster airplaneController;
     Rigidbody rb;
+    
+    public TextMeshProUGUI vtolText;
 
     public float throttleSensitivity = .05f;
     public bool vtol = true;
@@ -36,6 +39,14 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.JoystickButton1))
         {
             vtol = vtol ? false : true;
+            if (vtol)
+            {
+                vtolText.color = Color.green;
+            }
+            else if (!vtol)
+            {
+                vtolText.color = Color.red;
+            }
         }
 
         airplaneController.Pitch = Input.GetAxisRaw("Pitch");
